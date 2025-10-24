@@ -1,4 +1,4 @@
-![spell-cat-ai](https://github.com/user-attachments/assets/074a2ef4-d139-42d2-8e03-3c3b06d48973)
+<img width="495" height="492" alt="Screenshot 2025-10-24 132050" src="https://github.com/user-attachments/assets/7761c795-4a3a-44ec-80b1-fc0dbc276f8f" />
 
 
 # BookOfAlexander
