@@ -75,7 +75,10 @@ def get_AlexandersBookDict(language, input_type):
                 '𐑿' : 'X',
                 '𐒀' : 'Y',
                 '𐒁' : 'Z',
-                ' ': ' '
+                ',': ',',
+                '.': '.',
+                ' ': ' ',
+                '?': '?'
             }
         elif language == 'Runes':
             # Runes to Common
@@ -95,18 +98,21 @@ def get_AlexandersBookDict(language, input_type):
                 'ᒷ': 'M',
                 'ᒲ': 'N',
                 't': 'O',
-                '!¡': 'P',
+                '!': 'P',
                 '⚍': 'Q',
                 '+': 'R',
                 'ʖ': 'S',
                 'T': 'T',
                 '∴': 'U',
-                '𝙹': 'V',
+                'x': 'V',
                 'ᓭ': 'W',
                 '⍑': 'X',
                 'ノ': 'Y',
                 '⍊': 'Z',
-                ' ': ' '
+                ',': ',',
+                '.': '.',
+                ' ': ' ',
+                '?': '?'
             }
 
     elif input_type == 'Runes':
@@ -117,7 +123,7 @@ def get_AlexandersBookDict(language, input_type):
             'C': '⋮',
             'D': '⎓',
             'E': 'リ',
-            'F': 'ᓵ𝙹',
+            'F': 'ᓵ',
             'G': '↸',
             'H': 'ꖎ',
             'I': '⊣',
@@ -127,18 +133,21 @@ def get_AlexandersBookDict(language, input_type):
             'M': 'ᒷ',
             'N': 'ᒲ',
             'O': 't',
-            'P': '!¡',
+            'P': '!',
             'Q': '⚍',
             'R': '+',
             'S': 'ʖ',
             'T': 'T',
             'U': '∴',
-            'V': '𝙹',
+            'V': 'x',
             'W': 'ᓭ',
             'X': '⍑',
             'Y': 'ノ',
             'Z': '⍊',
-            ' ': ' '
+            ',': ',',
+            '.': '.',
+            ' ': ' ',
+            '?': '?'
         }
 
     elif input_type == 'Dwarven':
@@ -170,7 +179,10 @@ def get_AlexandersBookDict(language, input_type):
             'X': '𐑿',
             'Y': '𐒀',
             'Z': '𐒁',
-            ' ': ' '
+            ',': ',',
+            '.': '.',
+            ' ': ' ',
+            '?': '?'
         }
     
     return dictionary
