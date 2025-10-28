@@ -6,6 +6,7 @@ Ever wanted to turn your words into runes? Ever wanted to basically be a wizard?
 
 # ======================== #
 Update 0.0.1 : Added Dwarven Language
+Update 0.0.2 : Added a DND_version with ARG logic. Implemented a Golden seal ARG.
 
 Ref:
 https://lingojam.com/StandardGalacticAlphabet   
