@@ -292,6 +292,7 @@ def GoldenSeal(secretCode):
             print("\nThe seal denys you.")
             time.sleep(5)
             AlexandersBook()
+        c1 = ""
     golden_seal_pass1 = True # Save phrase
     # ===========================================================================
 
@@ -307,6 +308,7 @@ def GoldenSeal(secretCode):
             print("\nYou're past actions have been saved. The seal denys you any further. ")
             time.sleep(5)
             AlexandersBook()
+        c2 = ""
     golden_seal_pass2 = True # Save phrase
     # ===========================================================================
 
@@ -322,6 +324,7 @@ def GoldenSeal(secretCode):
             print("\nYou're past actions have been saved. The seal denys you any further.")
             time.sleep(5)
             AlexandersBook()
+        c3 = ""
     golden_seal_pass3 = True # Save phrase
     # ===========================================================================
 
@@ -333,7 +336,7 @@ def GoldenSeal(secretCode):
     userInput = input()
 
     if userInput.lower() != 'dawn':
-        print("\nYou are so close...Try again.")
+        print("\n Come what may, you will prevail. Try again.")
         time.sleep(5)
         AlexandersBook()
     golden_seal_pass4 = True # Save phrase
@@ -342,7 +345,7 @@ def GoldenSeal(secretCode):
     if golden_seal_pass1 and golden_seal_pass2 and golden_seal_pass3 and golden_seal_pass4 == True: complete = 1
     if complete == 1:
         time.sleep(5)
-        Kaelith = "\nLet Shadow fade away, May his Coffin be beared, May today be a Dream, Let the Dawn light my way. \n"
+        Kaelith = "\nMay Shadow fade away, May his Coffin be beared, May today be a Dream, May the Dawn light my way. \n"
         for word in Kaelith:
             print(word, end='', flush=True)
             time.sleep(0.07)
@@ -365,7 +368,7 @@ def GoldenSeal(secretCode):
             print(word, end='', flush=True)
             time.sleep(0.07)
 
-        userInput = input("\nRecite the Truth.\n") # Hint: Print Truth in Py console
+        userInput = input("\nRecite the Truth.\n") # Hint: Print the Truth in console
         if userInput == Truth:
             words1 = "The truth unveild. There isnt much time..."
             for word in words1:
