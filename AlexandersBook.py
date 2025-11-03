@@ -1,16 +1,6 @@
 import time
 import os
 
-Truth = "Infinity isnt without its flaws, undeying, unyeilding. We were chosen. To extingush shadows, to defy our fate. To bring it forth, shattered it may be. For you, This is a game, yet here you still play, but not as players...as pawns."
-Watcher_link = ""
-Kealith_link = ""
-
-golden_seal_pass1 = False # shadow 
-golden_seal_pass2 = False # coffin 
-golden_seal_pass3 = False # dream
-golden_seal_pass4 = False # dawn
-complete = 0
-
 def Common_decoder(language, text):
     english_dict = get_AlexandersBookDict(language,'Common')
     text_array = list(text)
@@ -233,9 +223,6 @@ def Cipher():
         Cipher()
 
 def AlexandersBook():
-    global golden_seal_pass1
-    global golden_seal_pass2
-    global golden_seal_pass3
     # clears terminal
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -245,7 +232,6 @@ def AlexandersBook():
         "\n2. Encode Common language" \
         "\n3. Decode to Common language" \
         "\n4. View Dictionaries" \
-        "\n5. Inspect Golden Seal?" \
         "\nEnter a number or enter 0 to close the book: ")
     user_input = input()
 
@@ -263,135 +249,9 @@ def AlexandersBook():
         print("Common to Runes Dictionary: ", get_AlexandersBookDict('Runes','Runes'))
         print("Common to Dwarven Dictionary: ", get_AlexandersBookDict('Dwarven','Dwarven'), "\n")
         AlexandersBook()
-    elif user_input == '5':
-        print("The Golden seal glows with energy...")
-        GoldenSeal(0)
-    elif user_input == '1127':
-        GoldenSeal(1127)
     else:
         print("Invalid option selected. Try again\n")
         AlexandersBook()
-
-def GoldenSeal(secretCode):
-    global golden_seal_pass1
-    global golden_seal_pass2
-    global golden_seal_pass3
-    global Kealith_link
-    global Watcher_link
-    
-
-    # Start of seal mechanism.
-    challenge_1 = "\nThe Golden seal sits still...awaiting a phrase. "
-    for word in challenge_1:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-
-    if golden_seal_pass1 == False:
-        userInput = input()
-        if userInput.lower() != 'shadow':
-            print("\nThe seal denys you.")
-            time.sleep(5)
-            AlexandersBook()
-        c1 = ""
-    golden_seal_pass1 = True # Save phrase
-    # ===========================================================================
-
-    
-    challenge_2 = "\nThe Golden seal begins to faintly glow...It awaits the next phrase. "
-    for word in challenge_2:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-
-    if golden_seal_pass2 == False:
-        userInput = input()
-        if userInput.lower() != 'coffin':
-            print("\nYou're past actions have been saved. The seal denys you any further. ")
-            time.sleep(5)
-            AlexandersBook()
-        c2 = ""
-    golden_seal_pass2 = True # Save phrase
-    # ===========================================================================
-
-    
-    challenge_3 = "\nThe Golden seal glows brighter...It awaits the next phrase. "
-    for word in challenge_3:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-
-    if golden_seal_pass3 == False:
-        userInput = input()
-        if userInput.lower() != 'dream':
-            print("\nYou're past actions have been saved. The seal denys you any further.")
-            time.sleep(5)
-            AlexandersBook()
-        c3 = ""
-    golden_seal_pass3 = True # Save phrase
-    # ===========================================================================
-
-    
-    challenge_4 = "\nThe Golden seal flows with energy outwards, you can feel holy radiance flow over you.\n Healing your old wounds, making you feel stronger. It awaits the final phrase. "
-    for word in challenge_4:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-    userInput = input()
-
-    if userInput.lower() != 'dawn':
-        print("\n Come what may, you will prevail. Try again.")
-        time.sleep(5)
-        AlexandersBook()
-    golden_seal_pass4 = True # Save phrase
-    # ===========================================================================
-
-    if golden_seal_pass1 and golden_seal_pass2 and golden_seal_pass3 and golden_seal_pass4 == True: complete = 1
-    if complete == 1:
-        time.sleep(5)
-        Kaelith = "\nMay Shadow fade away, May his Coffin be beared, May today be a Dream, May the Dawn light my way. \n"
-        for word in Kaelith:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-        print(Kealith_link)
-        return
-
-
-    # =======================================================
-    # Secret start of seal mechanism
-    if secretCode == 1127:
-        enc1 = "A Watchful Eye looms over you..."
-        for word in enc1:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-
-        time.sleep(3)
-
-        enc2 = "\nIf you are truly here on purpose, recite the phrase of truth."
-        for word in enc2:
-            print(word, end='', flush=True)
-            time.sleep(0.07)
-
-        userInput = input("\nRecite the Truth.\n") # Hint: Print the Truth in console
-        if userInput == Truth:
-            words1 = "The truth unveild. There isnt much time..."
-            for word in words1:
-                print(word, end='', flush=True)
-                time.sleep(0.07)
-            print("\n\nSomething beyond what you can see...")
-            print("Is unlocking it...")
-
-            time.sleep(7)
-            print("Warning!!! Illusion matter diagnostics are failing...")
-            time.sleep(7)
-            print('Warning!!! Perception of self is increasing!!!')
-            print('Recommend running SystemRESET() IMMEDIATELY!!!')
-            time.sleep(10)
-            print("Attempting to run SystemRESET() Standby...")
-            warnings = "Error "
-            for _ in range(200):
-                print(warnings)
-            
-            # I found you.
-            print("\n")
-            print(Watcher_link)
-
 
 if __name__ == "__main__":
     AlexandersBook()
