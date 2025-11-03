@@ -3,6 +3,9 @@
 
 # BookOfAlexander
 Ever wanted to turn your words into runes? Ever wanted to basically be a wizard? Well now you can!!! Take any english sentence and turn it into a new language!! You can also have friends decode your rune code!!
+<br>
+
+I also made a version for my dnd group (just for fun).
 
 # ======================== #
 Update 0.0.1 : Added Dwarven Language 
