@@ -12,3 +12,4 @@ Update 0.0.2 : Added a DND_version with ARG logic. Implemented a Golden seal ARG
 Ref:
 https://lingojam.com/StandardGalacticAlphabet   
 https://forgottenrealms.fandom.com/wiki/Dwarvish_dictionary
+https://lingojam.com/EnchantingTable%28Minecraft%29
