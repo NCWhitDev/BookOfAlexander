@@ -3,7 +3,7 @@ import os
 
 Truth = "The man with a Golden Eye sees all."
 Watcher_link = "www.TheLinkisntReadyYet.com"
-Kealith_link = "www.TheLinkisntReadyYet.com"
+Kealith_link = "https://www.youtube.com/watch?v=Q6v3KjTcIKA"
 cat_link = "https://www.youtube.com/watch?v=IxX_QHay02M"
 
 golden_seal_pass1 = False # shadow 
@@ -45,7 +45,6 @@ def Runic_encoder(Common_text):
     print("Do you wish to use this decoded text for further decoding? (Y/N): \n")
     if input().upper() == 'Y': AlexandersBook()
     else: return
-
 
 def Dwarven_encoder(Common_text):
     dwarven_dict = get_AlexandersBookDict('Dwarven', 'Dwarven')
@@ -511,7 +510,6 @@ def TheWatcherPath():
         if input().upper() == 'Y': AlexandersBook()
         else: return
     
-
 def DevMode():
     os.system('cls' if os.name == 'nt' else 'clear')
     print("Cheat code accepted. Bypassing Golden Seal...\n")
@@ -563,7 +561,6 @@ def DevMode():
         print("Exiting Dev Mode...\n")
         time.sleep(3)
         AlexandersBook() 
-
 
 if __name__ == "__main__":
     AlexandersBook()
